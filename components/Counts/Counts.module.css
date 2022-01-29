@@ -1,0 +1,45 @@
+.container {
+  color: var(--banao-primary);
+  width: max-content;
+  height: max-content;
+  text-align: center;
+}
+
+.container :nth-child(1) {
+  font-weight: 700;
+  font-size: 3.125rem;
+  padding: var(--banao-padding-6) 0 var(--banao-padding-6) 0;
+  line-height: 6.25rem;
+}
+
+.container :nth-child(2) {
+  font-weight: 600;
+  font-size: var(--banao-font-size-24);
+  padding: var(--banao-padding-4) 0 var(--banao-padding-4);
+  line-height: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+  .container :nth-child(1){
+    font-size: var(--banao-font-size-40);
+    line-height: 5rem;
+  }
+
+  .container :nth-child(2){
+    font-size: 1.438rem;
+    line-height: 2.5rem;
+  }
+
+}
+
+@media all and (max-width: 576px) {
+  .container :nth-child(1) {
+    font-size: var(--banao-font-size-32);
+    line-height: 3.25rem;
+  }
+
+  .container :nth-child(2) {
+    line-height: 2rem;
+    font-size: var(--banao-font-size-22);
+  }
+}

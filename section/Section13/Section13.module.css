@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8.25rem 0 8rem;
+}
+.counts {
+  background-color: var(--banao-primary);
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 13rem 5rem 13rem;
+  flex-direction: row;
+}
+.counts div {
+  color: var(--banao-white);
+}
+
+@media screen and (max-width: 1200px){
+  .counts{
+    padding: 5rem 10rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .counts{
+    padding: 5rem 2rem;
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .counts{
+    padding: 5rem var(--banao-padding-16);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--banao-margin-32);
+  }
+}

@@ -1,0 +1,34 @@
+.container {
+  padding: 7rem 5rem;
+}
+.title {
+  font-weight: 600;
+  text-align: center;
+  font-size: var(--banao-font-size-40);
+  margin: 0 0 var(--banao-margin-40) 0;
+}
+.thumbnails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--banao-margin-20);
+}
+.thumbnails div p {
+  color: #1f2327;
+}
+
+@media screen and (max-width: 992px) {
+  .container{
+    padding: 6rem var(--banao-padding-32);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    padding: 7rem 1rem;
+  }
+  .thumbnails{
+    flex-direction: column;
+    gap: var(--banao-margin-24);
+  }
+}

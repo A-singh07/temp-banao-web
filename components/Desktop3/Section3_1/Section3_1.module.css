@@ -1,0 +1,77 @@
+.section1 {
+  display: flex;
+  flex-direction: column;
+  color: var(--banao-white);
+  background-color: var(--banao-primary);
+  justify-content: center;
+  padding: 8.625rem 5rem 12.75rem;
+  min-height: 100%;
+}
+
+.title {
+  font-size: 2.75rem;
+  font-weight: 600;
+  line-height: 3.75rem;
+  padding-bottom: var(--banao-padding-16);
+}
+.data {
+  padding-bottom: var(--banao-padding-32);
+  line-height: 1.75rem;
+  font-size: var(--banao-font-size-18);
+  letter-spacing: -0.01em;
+  opacity: 0.8;
+}
+.description {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+}
+.description svg {
+  margin-left: var(--banao-margin-16);
+}
+.description svg path {
+  stroke: var(--banao-white);
+}
+
+.description > * {
+  cursor: pointer;
+}
+
+@media all and (max-width: 992px) {
+  .section1 {
+    padding: var(--banao-padding-32) var(--banao-padding-16);
+  }
+  .title {
+    font-size: var(--banao-font-size-32);
+    line-height: 3rem;
+  }
+  .description > * {
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .section1 {
+    padding: var(--banao-padding-40) var(--banao-padding-12);
+  }
+  .title{
+    font-size: var(--banao-font-size-32);
+    line-height: var(--banao-font-size-40);
+    margin-bottom: var(--banao-margin-16);
+  }
+  .data {
+    padding-bottom: var(--banao-padding-16);
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin-bottom: var(--banao-margin-40);
+  }
+  .description {
+    margin-bottom: var(--banao-margin-8);
+    font-size: var(--banao-font-size-16);
+    line-height: var(--banao-font-size-24);
+  }
+}

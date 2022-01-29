@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8.625rem 0 10.125rem 3.75rem;
+  gap: var(--banao-margin-40);
+}
+@media all and (max-width: 992px) {
+  .container {
+    padding: var(--banao-padding-48) var(--banao-padding-16);
+  }
+}
+@media all and (max-width: 768px) {
+  .container {
+    padding: var(--banao-padding-32) var(--banao-padding-12) var(--banao-padding-48);
+    gap: var(--banao-margin-24);
+  }
+}

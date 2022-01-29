@@ -1,0 +1,39 @@
+.container {
+  height: max-content;
+  width: max-content;
+  flex: 1 1;
+}
+.container > div:first-child {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  width: 100%;
+}
+
+.title {
+  padding: var(--banao-padding-12) 0 0 0;
+  font-size: var(--bano-font-size-22);
+  line-height: 2.25rem;
+  color: #60666c;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.text_left{
+  text-align: left;
+}
+
+.addition {
+  text-align: center;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .container{
+    max-width: fit-content;
+  }
+  .title{
+    line-height: var(--banao-font-size-28);
+  }
+}

@@ -1,0 +1,50 @@
+.container {
+  height: 100vh;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container :nth-child(1) h2 {
+  color: var(--banao-grey);
+}
+.work {
+  flex: 1;
+}
+.figure {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.figure > div:nth-child(2) {
+  margin: -100px 0 0 -100px !important;
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    padding: 2rem;
+  }
+  .counts > * {
+    margin: 0 3rem 0 0;
+  }
+  .figure > div:first-child {
+    left: 60px;
+  }
+  .figure > div:nth-child(2) {
+    left: 220px;
+  }
+}
+@media all and (max-width: 992px) {
+
+  .figure {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  .container {
+    padding: 4rem var(--banao-padding-12) var(--banao-padding-12) var(--banao-padding-12);
+    flex-direction: column;
+  }
+}

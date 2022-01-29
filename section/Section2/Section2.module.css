@@ -1,0 +1,43 @@
+.Desktop2 {
+  display: flex;
+  padding: 0;
+  height: 85vh;
+  overflow: hidden auto;
+  margin: 10rem 5rem;
+  position: relative;
+}
+
+.Desktop2::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #ebedf0 !important;
+}
+.Desktop2::-webkit-scrollbar-track {
+  background-color: #ebedf0 !important;
+}
+
+.Desktop2::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: none !important;
+  background-color: #fb610b;
+}
+
+.Desktop2 > * {
+  flex: 1;
+}
+
+@media all and (max-width: 992px) {
+  .Desktop2 {
+    margin: 2rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .Desktop2 {
+    display: block;
+    padding: 2.5rem 0.75rem;
+    flex-direction: column;
+    height: max-content;
+    margin: 0;
+  }
+}

@@ -1,0 +1,25 @@
+.Desktop3 {
+  display: flex;
+  min-height: 100vh;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.section1, .section2 {
+  flex: 1;
+}
+
+@media all and (max-width: 768px) {
+  .Desktop3 {
+    flex-direction: column;
+  }
+  .section1 {
+    max-width: 100vw;
+  }
+  .section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

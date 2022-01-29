@@ -1,0 +1,28 @@
+.container {
+  padding: var(--banao-padding-40) 3.75rem;
+}
+.title {
+  font-weight: 600;
+  text-align: center;
+  font-size: var(--banao-font-size-40);
+  line-height: 4.5rem;
+  margin: 0 0 var(--banao-margin-48) 0;
+}
+.thumbnails {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--banao-margin-40);
+}
+.thumbnails div p {
+  color: #60666c;
+}
+
+@media screen and (max-width: 768px) {
+  .thumbnails{
+    flex-direction: column;
+  }
+  .title{
+    font-size: var(--banao-font-size-32);
+    line-height: 3.5rem;
+  }
+}

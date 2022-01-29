@@ -1,0 +1,137 @@
+.heroContainer{
+  padding: 0;
+  position: relative;
+  width: 100vw;
+}
+
+.heroWrapper{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroHeading{
+  font-size: var(--banao-font-size-24);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--banao-font-size-32);
+  letter-spacing: -0.015em;
+  text-align: center;
+  color: var(--banao-white);
+  margin: 0 0 var(--banao-margin-16);
+}
+
+.heroHeading span{
+  color: var(--banao-primary);
+}
+
+.heroButton{
+  background: var(--banao-primary) !important;
+  color: var(--banao-white) !important;
+  font-weight: 700 !important;
+  border-radius: var(--banao-margin-8) !important;
+  font-size: var(--banao-font-size-12) !important;
+  letter-spacing: -0.01em !important;
+  line-height: var(--banao-font-size-16) !important;
+  text-align: center !important;
+  padding: var(--banao-padding-8) var(--banao-padding-12) !important;
+  text-transform: none !important;
+  font-family: var(--banao-font-family) !important;
+}
+
+.heroButton:hover{
+  background: var(--banao-primary) !important;
+}
+
+.heroDiagram{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .heroContainer {
+    width: 100vw;
+  }
+
+  .heroHeading{
+    font-size: var(--banao-margin-48);
+    line-height: 3.25rem;
+  }
+
+  .heroButton{
+    padding: var(--banao-padding-12) var(--banao-padding-25) !important;
+    font-size: var(--banao-font-size-18) !important;
+    line-height: var(--banao-font-size-32) !important;
+  }
+
+  .heroDiagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem 0 0;
+    position: relative;
+  }
+
+  .heroDiagram > div:first-child{
+    width: 100%;
+  }
+
+  .heroDiagram > div:nth-child(2){
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .heroHeading{
+    font-size: 4.5rem;
+    line-height: 72px;
+    margin: 0 0 var(--banao-margin-40);
+  }
+
+  .heroButton{
+    padding: var(--banao-padding-16) var(--banao-padding-40) !important;
+    font-size: var(--banao-font-size-22) !important;
+    line-height: 2.75rem !important;
+  }
+
+  .heroDiagram{
+    margin: 1rem 0 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .heroDiagram{
+    margin: 3.5rem 0 0;
+  }
+}
+
+@media screen and (min-width:1300px) {
+  .heroWrapper {
+    padding: 0rem 15rem 0;
+  }
+
+  .heroDiagram{
+    margin: 5.5rem 0 0;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+
+  .heroDiagram{
+    margin: 11.5rem 0 0;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+
+  .heroDiagram{
+    margin: 14.5rem 0 0;
+  }
+}

@@ -1,0 +1,102 @@
+.container {
+  max-width: 75vw;
+  height: max-content;
+}
+
+.title {
+  font-size: 2.75rem;
+  font-weight: 600;
+  line-height: 3.75rem;
+  color: #000000;
+  letter-spacing: -0.01em;
+}
+
+.introPara {
+  font-weight: 500;
+  font-size: var(--banao-font-size-24);
+  line-height: 38px;
+  letter-spacing: -0.01em;
+  color: var(--banao-grey);
+  margin: var(--banao-margin-16) 0 var(--banao-margin-32);
+  text-align: justify;
+}
+.subTitle {
+  margin: var(--banao-margin-16) 0 var(--banao-margin-40) 0;
+  font-size: var(--banao-font-size-24);
+  font-weight: 500;
+  color: var(--banao-primary);
+  letter-spacing: -0.01em;
+  line-height: 2.375rem;
+}
+
+.para {
+  margin: var(--banao-margin-25) 0;
+}
+
+.paraTitle {
+  color: var(--banao-primary);
+  font-weight: 600;
+  line-height: var(--banao-font-size-32);
+}
+
+.details {
+  font-size: var(--banao-font-size-16);
+  color: var(--banao-grey);
+  line-height: var(--banao-font-size-32);
+  font-weight: 500;
+}
+.grey-color{
+  color: var(--banao-grey);
+}
+
+.listHeading{
+  font-size: var(--banao-font-size-16);
+  font-weight: 500;
+  line-height: var(--banao-font-size-32);
+  letter-spacing: 0em;
+  margin: 0 0 var(--banao-margin-8);
+}
+
+.listContainer{
+  display: flex;
+  gap: 5rem;
+}
+
+.listColumn{
+  display: flex;
+  flex-direction: column;
+  gap: var(--banao-margin-12);
+}
+
+.listItem{
+  font-size: var(--banao-font-size-16);
+  line-height: var(--banao-font-size-32);
+  font-weight: 600;
+  color: var(--banao-primary);
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 100% !important;
+  }
+}
+
+@media all and (max-width: 576px) {
+
+  .title{
+    font-size: var(--banao-font-size-32);
+    line-height: var(--banao-font-size-40);
+  }
+
+  .subTitle {
+    margin: var(--banao-margin-16) 0 var(--banao-margin-24) 0;
+    font-size: var(--banao-font-size-18);
+    line-height: var(--banao-font-size-32);
+  }
+  .details {
+    margin: 0 0 var(--banao-margin-24) 0;
+    line-height: 1.625rem;
+    font-size: var(--banao-font-size-14);
+  }
+}

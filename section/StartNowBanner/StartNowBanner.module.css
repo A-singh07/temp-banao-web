@@ -1,0 +1,49 @@
+.container {
+  background-color: var(--banao-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4.25rem 15.125rem;
+  margin: 5.375rem 0 4.5rem;
+}
+.title {
+  color: var(--banao-white);
+  font-weight: 700;
+  text-align: center;
+  font-size: var(--banao-font-size-40);
+  padding: 0 0 var(--banao-padding-40) 0;
+  line-height: 3.5rem;
+}
+.button {
+  font-weight: 600 !important;
+  border-radius: 0.5rem !important;
+  font-size: var(--banao-font-size-16) !important;
+  padding: var(--banao-padding-16) var(--banao-padding-40) var(--banao-padding-16) var(--banao-padding-40) !important;
+  background: var(--banao-white) !important;
+  text-transform: none !important;
+  font-family: var(--banao-font-family) !important;
+  color: var(--banao-primary-black) !important;
+}
+.button:hover{
+  background: var(--banao-white) !important;
+}
+@media screen and (max-width: 1200px) {
+  .container{
+    padding: 4.25rem 7.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container{
+    padding: var(--banao-padding-48) var(--banao-padding-32);
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+  .title {
+    font-size: 1.25rem;
+    line-height: 200%;
+  }
+}

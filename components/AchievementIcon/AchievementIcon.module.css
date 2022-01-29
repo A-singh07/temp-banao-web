@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: max-content;
+}
+
+.container :nth-child(2) {
+  margin: var(--banao-margin-12) 0 var(--banao-margin-8) 0;
+  font-weight: 700;
+  font-size: var(--banao-font-size-24);
+}
+.container :nth-child(3) {
+  font-weight: 600;
+  color: var(--banao-grey);
+  font-size: var(--banao-font-size-20);
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    align-items: center;
+  }
+}

@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
+  height: max-content;
+  background-color: #fff8f4;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.closeBtn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 150;
+}
+
+.title {
+  text-align: center;
+  background-color: var(--banao-primary);
+  padding: var(--banao-margin-20) 4rem var(--banao-margin-20) 4rem;
+  font-weight: 800;
+  font-size: var(--banao-font-size-16);
+  color: var(--banao-white);
+  line-height: 1.25rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.name,
+.phone,
+.email {
+  height: 3rem;
+  margin: 0 var(--banao-padding-40) var(--banao-margin-16)
+    var(--banao-padding-40);
+}
+
+.name {
+  height: 3rem;
+  margin: var(--banao-margin-32) var(--banao-padding-40) var(--banao-margin-16)
+    var(--banao-padding-40);
+}
+.name,
+.phone,
+.email,
+.message {
+  outline: none;
+  font-size: var(--banao-font-size-14);
+  font-weight: 500;
+  border: 1px solid var(--banao-black-light);
+  border-radius: 0.5rem;
+  padding: 0 0 0 var(--banao-padding-20);
+}
+.message {
+  min-height: 6rem;
+  margin: 0 var(--banao-padding-40) var(--banao-margin-16)
+    var(--banao-padding-40);
+  padding: var(--banao-padding-14) 0 0 var(--banao-padding-20);
+  max-height: 200px;
+  resize: none;
+  height: auto;
+  overflow: hidden;
+}
+
+.checkboxContainer {
+  margin: 0 var(--banao-padding-40) var(--banao-margin-32)
+    var(--banao-padding-40);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+.checkboxContainer p {
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: -0.01em;
+  font-size: var(--banao-font-size-12);
+  color: var(--banao-grey-darker);
+  cursor: pointer;
+}
+
+.submit {
+  align-self: center !important;
+  width: max-content !important;
+  border-radius: 0.5rem !important;
+  padding: var(--banao-padding-8) var(--banao-padding-32) var(--banao-padding-8) var(--banao-padding-32) !important;
+  margin: 0 0 var(--banao-margin-24) 0 !important;
+  color: var(--banao-white) !important;
+  line-height: 2rem !important;
+  font-weight: 700 !important;
+  background-color: var(--banao-primary) !important;
+  text-transform: none !important;
+  font-family: var(--banao-font-family) !important;
+}
+
+  .submit:hover{
+  background: var(--banao-primary) !important;
+}
+
+.submit:disabled{
+  opacity: 0.5 !important;
+}
+
+@media screen and (max-width: 768px) {
+
+  .container{
+    width: fit-content;
+  }
+
+  .closeBtn{
+    top: 0;
+    right: 5px;
+  }
+
+  .title {
+    padding: var(--banao-padding-20) var(--banao-padding-20);
+  }
+
+  .name{
+    margin: var(--banao-margin-32) var(--banao-margin-16) var(--banao-margin-16);
+  }
+
+  .email, .phone, .message{
+    margin: 0 var(--banao-margin-16) var(--banao-margin-16);
+  }
+
+  .checkboxContainer{
+    margin: 0 var(--banao-margin-16) var(--banao-margin-32);
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .container {
+    width: 100%;
+  }
+}

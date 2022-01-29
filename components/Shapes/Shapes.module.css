@@ -1,0 +1,66 @@
+.shapesContainer {
+  height: 0;
+  position: absolute;
+
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.shape1 {
+  height: 40vw;
+  width: 40vw;
+  position: absolute;
+  z-index: -10;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8rem solid rgba(255, 92, 0, 0.15);
+  left: 90%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+}
+.shape2 {
+  height: 40vw;
+  width: 40vw;
+  position: absolute;
+  z-index: -10;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8rem solid rgba(255, 92, 0, 0.15);
+  left: 10%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
+
+@media all and (max-width: 1200px) {
+  .shape1,
+  .shape2 {
+    border: 6rem solid rgba(255, 92, 0, 0.15);
+  }
+}
+@media all and (max-width: 992px) {
+  .shape1,
+  .shape2 {
+    border: 5rem solid rgba(255, 92, 0, 0.15);
+  }
+}
+@media all and (max-width: 768px) {
+  .shape1,
+  .shape2 {
+    height: 60vw;
+    width: 60vw;
+    border: 5rem solid rgba(255, 92, 0, 0.15);
+  }
+}
+@media all and (max-width: 576px) {
+  .shape1,
+  .shape2 {
+    height: 75vw;
+    width: 75vw;
+    border: 5rem solid rgba(255, 92, 0, 0.15);
+  }
+}
